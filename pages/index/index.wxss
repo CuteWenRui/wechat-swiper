@@ -1,0 +1,31 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+} 
+.banner-image{
+  height: 50vh;
+  width: 50vh;
+  border-radius: 50%
+}
+.movie-swiper{
+  height: 90vh;
+}
+.movie-card{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  /* 相对定位 */
+}
+.movie-return-button{
+  /* 绝对定位 */
+  position: absolute;
+  right: 10px;
+  top:20px;
+  border: 1px solid brown;
+
+}

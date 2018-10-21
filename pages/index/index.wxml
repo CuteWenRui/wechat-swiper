@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class='container'>
+  <swiper class='movie-swiper' indicator-color='#123456' indicator-active-color='#9AFF9A' indicator-dots="true"
+  autoplay="true" interval="5000" duration="1000" current='{{currentIndex}}'>
+    <swiper-item wx:for='{{picList}}' wx:key='key'>
+      <view class='movie-card'>
+        <image class='banner-image' src='{{item.imageUrl}}'></image>
+        <text>{{item.name}}</text>
+        <text>我是一只小猫咪</text>
+        <text wx:if="{{index<picList.length-1}}" class='movie-return-button'>最后一页</text>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+
